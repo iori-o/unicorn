@@ -12,7 +12,7 @@ require "unicorn/ssl_server"
 # See Unicorn::Configurator for information on how to configure \Unicorn.
 class Unicorn::HttpServer
   # :stopdoc:
-  attr_accessor :app, :request, :timeout, :worker_processes,
+  attr_accessor :app, :request, :timeout, :timeout_signal, :worker_processes,
                 :before_fork, :after_fork, :before_exec,
                 :listener_opts, :preload_app,
                 :reexec_pid, :orig_app, :init_listeners,
